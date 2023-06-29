@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!--Headder part of thise page-->
+        <div class="header">
+            <h1 class="title">DevDetective</h1>
+            <div id="btn-mode">
+                <p id="mode-text">DARK</p>
+                <div class="icon-container"><img src="./photo/images/moon-icon.svg" alt=""></div>
+            </div>
+        </div>
+
+        <!-- Main Function -->
+        <div class="app">
+
+            <!--Search Baar-->
+           <div class="searchbar-container active">
+            <!-- <i class="fa fa-search"></i> -->
+            <input type="search" name="user-input" id="input" placeholder="Enter A GitHub Username..." required>
+            <div class="error">
+                <p id="no-results">no search results</p>
+            </div>
+            <button class="btn-search" id="submit">Search</button>
+           </div>
+           
+           <!-- Searching Result Ariea / Profile Container -->
+           <div class="Profile-container">
+              <div class="profile-content">
+
+                <!-- Profile Photo And Name -->
+                <div class="profile-header">
+                   <img id="avatar" src="#" alt="">
+                   <div class="Profile-info-wrapper">
+                    <div class="profile-name">
+                        <h2 class="name"></h2>
+                        <a href="#" target="_blank" id="user" rel="noopener noreferance"></a>
+                    </div>
+                        <p id="date"></p>
+                   </div>
+                </div>
+
+                <!-- Biography -->
+                <p id="bio"></p>
+
+                <!-- repo, follower, following => container -->
+                <div class="profile-stats-wrapper">
+                    <div class="profile-stat">
+                        <p class="stat-title">Repo</p>
+                        <p id="repo" class="star-value"></p>
+                    </div>
+                    <div class="profile-stat">
+                        <p class="stat-title">Follower</p>
+                        <p id="follower" class="star-value"></p>
+                    </div>
+                    <div class="profile-stat">
+                        <p class="stat-title">Following</p>
+                        <p id="following" class="star-value"></p>
+                    </div>
+                </div>
+
+                <!-- Social Midia Connection And Link -->
+                <div class="profile-bottom-wrapper">
+                    <div class="profile-info">
+                        <div class="bottom-icons"><img src="./photo/images/location-icon.svg" alt="location"></div>
+                        <p id="location"></p>
+                    </div>
+                    <div>
+                        <div class="bottom-icons"><img src="./photo/images/website-icon.svg" alt="page"></div>
+                        <a id="page" href="#"></a>
+                    </div>
+                    <div>
+                        <div class="bottom-icons"><img src="./photo/images/twitter-icon.svg" alt="twitter"></div>
+                        <a id="twitter" href="#"></a>
+                    </div>
+                    <div>
+                        <div class="bottom-icons"><img src="./photo/images/company-icon.svg" alt="company"></div>
+                        <p id="company"></p>
+                    </div>
+                </div>
+
+              </div>
+           </div>
+           
+        </div>
+
+    </div>
+
+
+    <!-- <script src="https://kit.fontawesome.com/c33a357a73.js" crossorigin="anonymous"></script> -->
+    <script href="./script.js"></script>
+</body>
+</html>
